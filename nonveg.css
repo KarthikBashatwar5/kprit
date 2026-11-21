@@ -1,0 +1,126 @@
+/* NON-VEG PAGE */
+
+.nonveg-page {
+  min-height: 100vh;
+  padding: 40px 6%;
+  background-color: #fff7f3;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+.nonveg-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.nonveg-header h1 {
+  font-size: 36px;
+  color: #9b2c20;
+  margin-bottom: 10px;
+}
+
+.nonveg-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* FOOD GRID */
+
+.nonveg-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* FOOD CARD */
+
+.nonveg-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nonveg-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.nonveg-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* CARD CONTENT */
+
+.nonveg-card-content {
+  padding: 20px;
+}
+
+.nonveg-card-content h2 {
+  font-size: 21px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.nonveg-card-content p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+  min-height: 45px;
+}
+
+/* PRICE AND BUTTON */
+
+.nonveg-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.nonveg-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #9b2c20;
+}
+
+.nonveg-button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #9b2c20;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.nonveg-button:hover {
+  background-color: #701d15;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+  .nonveg-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .nonveg-container {
+    grid-template-columns: 1fr;
+  }
+
+  .nonveg-header h1 {
+    font-size: 28px;
+  }
+
+  .nonveg-page {
+    padding: 25px 5%;
+  }
+}
