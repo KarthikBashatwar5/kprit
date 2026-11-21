@@ -1,0 +1,265 @@
+/* HOME PAGE */
+
+.home-page {
+  font-family: Arial, sans-serif;
+  background-color: #f9faf6;
+  color: #222;
+}
+
+/* HERO SECTION */
+
+.home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 8%;
+  gap: 40px;
+  background-color: #eaf2e5;
+}
+
+.home-hero-content {
+  flex: 1;
+}
+
+.home-hero-content h1 {
+  font-size: 48px;
+  color: #245c32;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.home-hero-content h1 span {
+  display: block;
+  color: #e67e22;
+}
+
+.home-hero-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 500px;
+}
+
+.home-hero-image {
+  flex: 1;
+}
+
+.home-hero-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* HERO BUTTONS */
+
+.home-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.home-btn {
+  padding: 13px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.home-btn-primary {
+  background-color: #245c32;
+  color: white;
+}
+
+.home-btn-primary:hover {
+  background-color: #174222;
+}
+
+.home-btn-secondary {
+  background-color: #e67e22;
+  color: white;
+}
+
+.home-btn-secondary:hover {
+  background-color: #c76510;
+}
+
+/* WHY CHOOSE US */
+
+.home-special {
+  text-align: center;
+  padding: 60px 8%;
+}
+
+.home-special h2,
+.home-popular h2 {
+  font-size: 32px;
+  color: #245c32;
+  margin-bottom: 15px;
+}
+
+.home-special-subtitle {
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.home-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.home-feature-card {
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+
+.home-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.home-feature-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.home-feature-card h3 {
+  color: #245c32;
+  margin-bottom: 12px;
+}
+
+.home-feature-card p {
+  color: #777;
+  line-height: 1.6;
+}
+
+/* POPULAR FOOD */
+
+.home-popular {
+  text-align: center;
+  padding: 60px 8%;
+  background-color: #fff;
+}
+
+.home-popular-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.home-popular-card {
+  background-color: #f9faf6;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  transition: 0.3s;
+}
+
+.home-popular-card:hover {
+  transform: translateY(-5px);
+}
+
+.home-popular-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.home-popular-card h3 {
+  margin: 15px 10px;
+  color: #333;
+}
+
+.home-popular-card p {
+  color: #245c32;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* VIEW MENU BUTTON */
+
+.home-view-menu {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 12px 30px;
+  background-color: #245c32;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.home-view-menu:hover {
+  background-color: #174222;
+}
+
+/* FOOTER */
+
+.home-footer {
+  text-align: center;
+  padding: 35px 20px;
+  background-color: #245c32;
+  color: white;
+}
+
+.home-footer h2 {
+  margin-bottom: 15px;
+}
+
+.home-footer p {
+  margin: 8px 0;
+  color: #e5e5e5;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .home-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-hero-content p {
+    margin: auto;
+  }
+
+  .home-buttons {
+    justify-content: center;
+  }
+
+  .home-hero-image img {
+    height: 300px;
+  }
+
+  .home-features,
+  .home-popular-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .home-hero-content h1 {
+    font-size: 34px;
+  }
+
+  .home-features,
+  .home-popular-container {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero {
+    padding: 40px 5%;
+  }
+
+  .home-special,
+  .home-popular {
+    padding: 40px 5%;
+  }
+}
